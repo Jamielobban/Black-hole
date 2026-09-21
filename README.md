@@ -4,7 +4,7 @@ A real-time **black hole rendering experiment built in Unity URP**, focused on g
 
 The effect is implemented primarily in HLSL and traces light around a simplified Schwarzschild black hole in real time.
 
-![Black Hole](Images/black-hole-edge-on.jpg)
+![Black Hole Edge-On](Images/black-hole.jpg)
 
 ---
 
@@ -12,15 +12,13 @@ The effect is implemented primarily in HLSL and traces light around a simplified
 
 ### Edge-On View
 
-A near-equatorial view showing the accretion disk crossing the black hole and the rear section being gravitationally lensed around it.
-
-![Black Hole Edge-On](Images/black-hole-edge-on.jpg)
+A near-equatorial view showing the accretion disk crossing the black hole, with the rear section strongly distorted around it by gravitational lensing.
 
 ### High-Angle View
 
-A higher observer angle showing how the apparent shape of the accretion disk changes with viewpoint.
+A higher observer angle showing how the apparent structure of the accretion disk changes as the viewpoint moves away from the disk plane.
 
-![Black Hole High-Angle](Images/black-hole-high-angle.jpg)
+![Black Hole High-Angle](Images/black-hole2jpg.jpg)
 
 ---
 
@@ -33,7 +31,7 @@ A higher observer angle showing how the apparent shape of the accretion disk cha
 - Volumetric gas rendering
 - Approximate Doppler and gravitational-redshift effects
 - Procedural HDR deep-space background
-- Multiple quality presets
+- Multiple rendering quality presets
 - Sub-pixel supersampling
 - Interactive orbit and zoom controls
 - Unity editor tools for setup and sky generation
@@ -44,10 +42,10 @@ A higher observer angle showing how the apparent shape of the accretion disk cha
 
 Each screen-space ray is numerically integrated around the black hole.
 
-During the process, the renderer checks whether the ray:
+During the process, the renderer determines whether the ray:
 
 1. Crosses the event horizon
-2. Intersects the accretion disk
+2. Passes through the accretion disk
 3. Escapes back into space
 
 Disk intersections contribute emission and absorption, while escaping rays sample the procedural background sky.
@@ -78,7 +76,7 @@ Final Image
 
 The disk is generated procedurally rather than using a traditional textured mesh.
 
-Its appearance is influenced by:
+Its appearance is controlled by:
 
 - Disk density
 - Radial emission
@@ -150,7 +148,7 @@ Assets/BlackHole/
 - Desktop GPU recommended
 - Git LFS
 
-The large generated HDR sky asset is stored through Git LFS.
+The generated HDR sky asset is stored through Git LFS.
 
 ---
 
