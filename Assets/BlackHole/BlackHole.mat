@@ -29,11 +29,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _DiskOuter: 9.967324
-    - _DiskThickness: 0.6
-    - _Exposure: 3.145071
+    - _DiskOuter: 10
+    - _DiskThickness: 0.18
+    - _Exposure: 2.5
     - _RaySamples: 2
-    - _SkyBrightness: 0.5597259
+    - _SkyBrightness: 1
     - _Steps: 480
     - _VolumeEnabled: 1
     - _VolumeQuality: 1
