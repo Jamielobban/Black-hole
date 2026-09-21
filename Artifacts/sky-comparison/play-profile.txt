@@ -1,0 +1,4 @@
+Unity Play mode, batch editor; 1280x720 camera target, orbiting camera, 30 warm-up + 90 measured frames per preset. CPU frame interval includes editor overhead; not standalone or GPU-only FPS.
+fast: mean 4.22 ms, p95 5.30 ms
+balanced: mean 8.44 ms, p95 9.42 ms
+fine: mean 19.16 ms, p95 20.17 ms
